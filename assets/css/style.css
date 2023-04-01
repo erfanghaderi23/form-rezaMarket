@@ -1,0 +1,217 @@
+/*YekanBakhBold*/
+@font-face {
+    font-family: iranYekanBold;
+    src: url(../fonts/IranYekan/YekanBakhBold.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhBold.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhBold.ttf) format("ttf")
+}
+/*YekanBakhLight*/
+@font-face {
+    font-family: iranYekanLight;
+    src: url(../fonts/IranYekan/YekanBakhLight.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhLight.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhLight.ttf) format("ttf")
+}
+
+/*YekanBakhMedium*/
+@font-face {
+    font-family: iranYekanMedium;
+    src: url(../fonts/IranYekan/YekanBakhMedium.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhMedium.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhMedium.ttf) format("ttf")
+}
+
+/*YekanBakhRegular*/
+@font-face {
+    font-family: iranYekan;
+    src: url(../fonts/IranYekan/YekanBakhRegular.eot) format("eot"),
+    url(../fonts/IranYekan/YekanBakhRegular.woff) format("woff"),
+    url(../fonts/IranYekan/YekanBakhRegular.ttf) format("ttf")
+}
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: iranYekan;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #273043;
+}
+
+form {
+    margin-block-end: 0;
+}
+
+input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2BC194;
+    border-radius: 3px;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+ul {
+    list-style-type: none;
+    padding-right: 0;
+}
+
+button, a {
+    transition: all 0.3s linear;
+}
+
+button {
+    border: none;
+}
+
+/*form-account*/
+.dv-btn-account{
+    background: #2BC194;
+    border-radius: 6px;
+    transition: all .3s initial;
+    padding: 10px 20px;
+}
+.dv-btn-account:hover{
+    opacity: .8;
+}
+.dv-text-logo{
+    font-size: 14px;
+    color: #024DA3;
+}
+.dv-input-f-accounts input , .dv-input-f-accounts select , .dv-input-f-accounts textarea{
+    border: 1px solid #7A7D88;
+    border-radius: 6px;
+    padding: 13px 20px;
+}
+.dv-input-f-accounts ::placeholder , .dv-input-f-accounts option{
+    color: #212529;
+    font-size: 14px;
+    font-family: iranYekan;
+}
+.dv-input-f-accounts  select {
+    appearance: none;
+}
+.dv-input-f-accounts #mobile::placeholder , .dv-input-f-accounts #telephone::placeholder{
+    text-align: right;
+}
+
+.dv-bg-account img{
+    display: flex;
+}
+
+.dv-btn-account-R-v-code{
+    background: #9E9E9E;
+    border-radius: 6px;
+    transition: all .3s initial;
+    padding: 10px 20px;
+}
+.dv-btn-account-R-v-code:hover{
+    opacity: .8;
+}
+.dv-time-R-v-code{
+    font-size: 12px;
+}
+.dv-minutes-v-code ,.dv-second-v-code{
+    width: 30px;
+    height: 30px;
+    background: #F2F1F1;
+    border-radius: 5px;
+}
+.p1{
+font-size: 14px;
+    font-family: iranYekan;
+}
+.p2-blue{
+    color: #024DA3;
+    font-family: iranYekan;
+}
+/*Seperated Input Verification Code*/
+.number-code > div {
+    display: flex;
+}
+form input.code-input {
+    font-size: 1.5em;
+    height: 52px;
+    width: 52px;
+    text-align: center;
+    flex: 1 0 1em;
+}
+form input[type=submit] {
+    margin-left: auto;
+    display: block;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+
+form input:invalid {
+    box-shadow: none;
+}
+form input:focus {
+    outline: none;
+    border: 1px solid #2BC194;
+}
+/*END_____Seperated Input Verification Code*/
+
+
+@media (max-width: 376px) {
+    form input.code-input{
+        width: 4px;
+        height: 50px;
+    }
+}
+@media (max-width: 992px) {
+    .dv-bg-account img{
+        height: 500px;
+        width: 100%;
+        object-fit: initial;
+    }
+}
+@media (min-width: 992px) {
+    .dv-bg-account img{
+        position: fixed;
+        margin-right: 120px;
+    }
+    .form input.code-input{
+        width: 20px;
+        height: 20px;
+    }
+
+}
